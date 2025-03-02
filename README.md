@@ -1,52 +1,39 @@
-Orange vs Tomato Classification using Neural Networks
-This repository contains a deep learning project for classifying oranges and tomatoes using a neural network. The dataset has been collected manually and is used to train a model from scratch.
+# Orange vs Tomato Classification
 
-🚀 Features
-Custom dataset of oranges and tomatoes
-Preprocessing of images for deep learning
-Training a neural network for classification
-Model evaluation and accuracy assessment
-📂 Repository Structure
-data/ - Contains the manually collected images of oranges and tomatoes
-preprocessing.py - Script for image preprocessing (resizing, normalization, augmentation)
-train_model.py - Code for training the neural network
-evaluate_model.py - Model testing and performance evaluation
-saved_model/ - Directory for storing the trained model
-🛠 Requirements
-Install the required dependencies before running the project:
+This repository contains a deep learning project for classifying oranges and tomatoes using a neural network. The dataset has been self-collected, and the model is built from scratch using TensorFlow.
 
-bash
-نسخ
-تحرير
-pip install tensorflow keras numpy pandas matplotlib opencv-python
-📌 Usage
-1️⃣ Data Preprocessing
-Run the preprocessing script to prepare the dataset:
+## Features
+- Self-collected dataset of oranges and tomatoes
+- Data preprocessing and augmentation
+- Neural network model training from scratch
+- Model evaluation and visualization
 
-bash
-نسخ
-تحرير
-python preprocessing.py
-2️⃣ Model Training
-Train the neural network using:
+## Repository Structure
+- `data/` - Contains the dataset of oranges and tomatoes.
+- `train_model.ipynb` - Notebook for preprocessing data, training, and saving the model.
+- `deploy_model.ipynb` - Notebook for loading the model and making predictions.
 
-bash
-نسخ
-تحرير
-python train_model.py
-3️⃣ Model Evaluation
-Evaluate the trained model with test data:
+## Requirements
+To run this project, install the following dependencies:
 
-bash
-نسخ
-تحرير
-python evaluate_model.py
-📊 Dataset
-The dataset consists of self-collected images of oranges and tomatoes. Images have been processed and labeled for training purposes.
+```bash
+pip install tensorflow numpy pandas matplotlib opencv-python
+```
 
+## Usage
+### Training the Model
+1. Open `train_model.ipynb` in Jupyter Notebook.
+2. Run all cells to preprocess data, train the neural network, and save the model.
 
-🤝 Contributing
-Feel free to open issues or contribute to improve the model.
+### Deploying the Model
+1. Open `deploy_model.ipynb` in Jupyter Notebook.
+2. Load the trained model and classify new images.
 
-🏆 Acknowledgments
-Thanks to TensorFlow/Keras for deep learning tools and OpenCV for image processing.
+## Dataset
+The dataset consists of images of oranges and tomatoes, collected manually.
+
+## Acknowledgments
+- **TensorFlow & Keras** for deep learning implementation.
+- **OpenCV** for image processing.
+
+Feel free to contribute or raise issues if you have suggestions or improvements!
